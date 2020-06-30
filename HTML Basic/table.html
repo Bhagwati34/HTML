@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html leng="en">
+<head>
+   <meta charset="UFT-8">
+   <title>HTML Table</title>
+   <style>
+   	table,th,td{
+   		border: 1px solid black;
+   		border-collapse: collapse; 
+   	
+   	}
+   	th,td{
+   		padding: 10px;
+   	}
+   	th {
+   		text-align: left;
+   	}
+   	table{
+   		border-spacing: 15px;
+   	}
+   	table#demo{
+   		width: 100%;
+   		background-color:red;
+   	}
+   	table#demo th{
+   		color: white;
+   		background-color: black;
+   	}
+   </style>
+</head>
+<body>
+	<!-- border-collapse: collapse; 
+	  table{
+   		border-spacing: 15px;
+   	}-->
+    <table id="demo">
+    	<caption>Name list</caption>
+    	<tr>
+    		<th>First Name</th>
+    		<th>Last Name</th>
+    		<th colspan="2">tel</th>
+    		<th rowspan="2">where</th>
+    	</tr>
+    	<tr>
+    		<td>Bhagwati</td>
+    		<td>Dangi</td>
+    		<td>12345</td>
+    		<td>234570</td>
+    		<td>deri</td>
+    		<td>sikkim</td>
+    	</tr>
+    </table>
+</body>
+</html>     
