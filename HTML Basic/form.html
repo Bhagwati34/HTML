@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html leng="en">
+<head>
+   <meta charset="UFT-8">
+   	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>HTML form</title>
+</head>
+<body>
+	<form action="/action_page.php" target="-blank" method="post" autocomplete="on">
+		<fieldset>
+			<legend style="font-weight: bold;">Full Name: </legend><br>
+		<label for="fname"> First Name: </label><br>
+		<input type="text" id="fname" name="fname" required autofocus><br>
+
+		<label for="lname"> Last Name: </label><br>
+		<input type="text" id="lname" name="lname" required><br>
+	</fieldset>
+
+	    <label for="pwd">password:</label><br>
+	    <input type="password" id="pwd" name="pwd"><br>
+	    <p style="font-weight: bold;">Gender:</p>
+		<label for="male">male </label><br>
+		<input type="radio" id="male" name="gender" value="male"><br>
+		<label for="female">female </label><br>
+		<input type="radio" id="female" name="gender" value="female"><br>
+
+       <p style="font-weight: bold;">select car:</p>
+		<select id="cars" name="cars" size="2" multiple="2">
+			<option value="BMW">BMW</option>
+			<option value="volvo">volvo</option>
+			<option value="saab">saab</option>
+		</select><br>
+        <p style="font-weight: bold;">Checkbox:</p>
+        <label for="A"> A</label>
+        <input type="checkbox" id="A" name="A" value="A"><br>
+        <label for="B">B</label>
+        <input type="checkbox" id="B" name="B" value="B"><br>
+        <label for="C">C</label>
+        <input type="checkbox" id="C" name="C" value="C"><br>
+
+        <label for="fcolor" style="font-weight: bold;"> select Color:</label><br>
+        <input type="Color" id="fcolor" name="fcolor"><br>
+
+        <label for="bdata" style="font-weight: bold;">Birthday:</label><br>
+        <input type="date" id="bdata" name="bdate"><br>
+
+        <label for="sfile" style="font-weight: bold;">select file: </label><br>
+        <input type="file" id="sfile" name="sfile" multiple><br>
+
+        <label for="num" style="font-weight: bold;"> input number: </label><br>
+        <input type="number" id="num" name="num" ><br>
+
+        <label for="gsearch"style="font-weight: bold;">search:</label><br>
+        <input type="search" id="gsearch" name="gsearch"><br>
+
+        <label for="phone" style="font-weight: bold;">phone number:</label><br>
+         <input type="tel" id="phone" name="phone" placeholder="eg. 123-4567-890" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" min="0" max="9" maxlength="10" size="10"><br>
+
+         <label for="hpage" style="font-weight: bold;">Add URL:</label><br>
+         <input type="URL" id="hpage" name="hpage"><br>
+
+         <label for="wk" style="font-weight: bold;">Week:</label><br>
+         <input type="Week" id="wk" name="wk"><br>
+
+         <label for="dable" style="font-weight: bold;" > disabled input name: </label><br>
+         <input type="text" id="dable" name="dable" value="dangi" disabled><br>
+
+         <label for="ronly" style="font-weight: bold;" > readonly input name: </label><br>
+         <input type="text" id="dable" name="dable" value="dangi" readonly><br>
+
+         <label for="pin" style="font-weight: bold;">PIN :</label><br>
+         <input type="text" id="pin" name="pin" maxlength="6" size="6" autocomplete="on"><br>
+
+        </br><figure>
+        	<input type="image" src="Rotating_earth_(large).gif" alt="earth" max-width="100%" height="auto">
+        	<figcaption>fig. earth</figcaption>
+        </figure>
+
+
+
+    
+		<p style="font-weight: bold;">message area:</p>
+		<textarea name="message" rows="10" cols="30">
+		</textarea><br>
+
+		<button type="button" onclick="alert('hello')">click me!</button><br>
+        
+             <p style="font-weight: bold;">category:</p>
+			<input list="category">
+			<datalist id="category">
+				<option value="obc">
+				<option value="general">
+				<option value="st">
+				<option value="sc">
+			</datalist><br>
+
+		<input type="submit" name="submit"><br>
+		<input type="reset" name="reset">
+
+	</form>
+   
+</body>
+</html>     
